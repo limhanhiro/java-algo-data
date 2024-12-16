@@ -1,6 +1,5 @@
 package chapter3;
 
-import chpater2.redix;
 
 public class q1 {
     
