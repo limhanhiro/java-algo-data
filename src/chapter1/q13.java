@@ -2,7 +2,7 @@ package chapter1;
 
 import java.util.Scanner;
 
-public class q13 {
+public class Q13 {
     public static void main(String[] args) {
         // 입력한 수를 한변으로 하는 정사갹형을 * 로 출력하는 프로그램
         //scanner 사용

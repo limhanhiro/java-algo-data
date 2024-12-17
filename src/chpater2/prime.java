@@ -1,6 +1,6 @@
 package chpater2;
 
-public class prime {
+public class Prime {
     public static void main(String[] args) {
         int counter = 0;
         int ptr = 0;

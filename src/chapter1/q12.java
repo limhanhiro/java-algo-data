@@ -1,6 +1,6 @@
 package chapter1;
 
-public class q12 {
+public class Q12 {
     public static void main(String[] args) {
         System.out.printf("   |");
         for(int i=1; i<10; i++) {

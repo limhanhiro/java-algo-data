@@ -1,7 +1,7 @@
 package chapter3;
 
 
-public class q1 {
+public class Q1 {
     
     public static void main(String[] args) {
         int[] a = {3,3,3,3,1,2,4,4,4,4};

@@ -1,6 +1,6 @@
 package chapter3;
 
-public class q5 {
+public class Q5 {
     public static void main(String[] args) {
         int[] a = {1,3,2,3,7,7,7,8,8,9,11};
         int result = binSearchX(a, a.length, 7);

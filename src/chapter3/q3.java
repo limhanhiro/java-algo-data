@@ -2,7 +2,7 @@ package chapter3;
 
 
 
-public class q3 {
+public class Q3 {
     public static void main(String[] args) {
         int[] a = {1,9,2,9,4,6,7,9};
         int[] idx = new int[a.length];

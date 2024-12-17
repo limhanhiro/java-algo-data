@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-class YMD {
+class Ymd {
     int y;		// 년
     int m;		// 월(1~12)
     int d;		// 일(1~31)
@@ -21,15 +21,15 @@ class YMD {
     }
 
     //--- 생성자(주어진 날짜로 설정)---//
-    YMD(int y, int m, int d) {
+    Ymd(int y, int m, int d) {
         this.y = y;
         this.m = m;
         this.d = d;
     }
 
     //--- n일 후의 날짜를 반환 ---//
-    YMD after(int n) {
-        YMD temp = new YMD(this.y, this.m, this.d);
+    Ymd after(int n) {
+        Ymd temp = new Ymd(this.y, this.m, this.d);
         if (n < 0)
             return before(-n);
 
@@ -46,8 +46,8 @@ class YMD {
     }
 
     //--- n일 전의 날짜를 반환 ---//
-    YMD before(int n) {
-        YMD temp = new YMD(this.y, this.m, this.d);
+    Ymd before(int n) {
+        Ymd temp = new Ymd(this.y, this.m, this.d);
         if (n < 0)
             return after(-n);
 
@@ -70,7 +70,7 @@ class YMD {
         System.out.print("년 : ");  int y = stdIn.nextInt();
         System.out.print("월 : ");  int m = stdIn.nextInt();
         System.out.print("일 : ");  int d = stdIn.nextInt();
-        YMD date = new YMD(y, m, d);
+        Ymd date = new Ymd(y, m, d);
 
         System.out.print("며칠 전/후의 날짜를 구할까요? : ");
         int n = stdIn.nextInt();
@@ -82,10 +82,10 @@ class YMD {
         set.add(2);
         set.add(2);
 
-        YMD d1 = date.after(n);
+        Ymd d1 = date.after(n);
         System.out.printf("%d일 후의 날짜는 %d년%d월%d일입니다.\n", n, d1.y, d1.m, d1.d);
 
-        YMD d2 = date.before(n);
+        Ymd d2 = date.before(n);
         System.out.printf("%d일 전의 날짜는 %d년%d월%d일입니다.\n", n, d2.y, d2.m, d2.d);
     }
 }

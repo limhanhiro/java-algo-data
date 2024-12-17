@@ -2,7 +2,7 @@ package chpater2;
 
 import java.util.Scanner;
 
-public class q3 {
+public class Q3 {
 
     private static final String REF = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

@@ -2,7 +2,7 @@ package chpater2;
 
 import java.util.Arrays;
 
-public class q2 {
+public class Q2 {
     public static void main(String[] args) {
         int[] a = {1,2,3,4,5,6,7,8,9,10,11};
         int[] b = new int[a.length];

@@ -2,7 +2,7 @@ package chpater2;
 
 import java.util.Scanner;
 
-public class redix {
+public class Redix {
     private static final String REF = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

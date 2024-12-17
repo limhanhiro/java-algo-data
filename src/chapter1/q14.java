@@ -2,7 +2,7 @@ package chapter1;
 
 import java.util.Scanner;
 
-public class q14 {
+public class Q14 {
     public static void main(String[] args) {
 
         spira(5);

@@ -3,7 +3,7 @@ package chpater2;
 import java.util.Random;
 import java.util.Scanner;
 
-public class pra {
+public class Pra {
     public static void main(String[] args) {
         int[] a = {3,3,3,3,1,2,4,4,4,4};
         for(int i=0; i<a.length /2; i++) {
