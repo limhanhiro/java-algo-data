@@ -1,13 +1,10 @@
-package chpater2;
+package chapter2;
 
 import java.util.Scanner;
 
-public class Q3 {
-
+public class Redix {
     private static final String REF = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
         int no;
         int cd;
@@ -41,26 +38,12 @@ public class Q3 {
 
     }
 
-    public static int cardConv(int x, int r ,char[] d) {
-        int n = ((Integer)x).toString().length();
+    public static int cardConv(int a, int b ,char[] d) {
         int digits = 0;
-        System.out.printf(String.format("%%2d | %%%dd\n", n), r, x);
         do {
-            System.out.printf("   +");
-            for (int i = 0; i < n + 2; i++)
-                System.out.print('-');
-            System.out.println();
-
-            if (x / r != 0)
-                System.out.printf(String.format("%%2d | %%%dd    ... %%d\n", n),
-                        r, x / r, x % r);
-            else
-                System.out.printf(String.format("     %%%dd    ... %%d\n", n),
-                        x / r, x % r);
-            d[digits++] = REF.charAt(x % r);   // r 로 나눈 나머지를 저장
-            x /= r;
-        } while (x != 0);
-
+            d[digits++] = REF.charAt(a % b);
+            a /= b;
+        } while (a != 0);
         for (int i=0; i<digits / 2; i++) {
             char t = d[i];
             d[i] = d[digits-i-1];
@@ -69,4 +52,5 @@ public class Q3 {
 
         return digits;
     }
+
 }

@@ -1,4 +1,4 @@
-package chpater2;
+package chapter2;
 
 import java.util.HashSet;
 import java.util.Scanner;
