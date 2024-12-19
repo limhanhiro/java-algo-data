@@ -1,23 +1,30 @@
 package chapter4;
 
-import java.util.EmptyStackException;
 
-public class Stack<E> {
+
+// 실행 시 예외 (스택이 비어 있음)
+// 스택이 비어 있음 예외
+class EmptyStackException extends RuntimeException {
+    public EmptyStackException() {
+        super("The stack is empty.");
+    }
+}
+
+// 스택이 가득 참 예외
+class OverflowStackException extends RuntimeException {
+    public OverflowStackException() {
+        super("The stack is full.");
+    }
+}
+
+
+public class Stack<E>  {
 
     private E[] stk; // 스택용 배열
     private int capacity; // 스택 용량
     private int ptr; // 스택 포인터
 
-    // 실행 시 예외 (스택이 비어 있음)
-    public class EmptyStackException extends RuntimeException {
-        public EmptyStackException() {}
-    }
-
-    // 실행 시 예외 (스택이 가득 참)
-    public class OverflowStackException extends RuntimeException {
-        public OverflowStackException() {}
-    }
-
+    
     // push : 스택에 x를 푸시
     public E push(E x) throws OverflowStackException {
         if (ptr >= capacity) {
